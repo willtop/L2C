@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--exp_name", "clevrtex/test_release",
+                "--num_slots", "11",
+                "--lr_sa", "1e-4",
+                "--lr_lsd", "1e-4",
+                "--seed", "1234",
+                "--log_freq", "5000",
+                "--save_freq", "50000",
+                "--cnn_downsample", "2",
+                "--dataset_name", "clevrtex",
+                "--image_size", "128",
+                "--batch_size", "16",
+                "--lambda_composition", "1.0",
+                "--lambda_oneshot", "1.0",
+                "--lambda_slot_diffusion", "1.0",
+                "--lambda_mask_reg", "0.5",
+                "--latent_size", "192",
+                "--input_channels", "3",
+                "--attention_iters", "7",
+                "--mlp_size", "192",
+                "--num_dec_blocks", "8",
+                "--d_tf", "384",
+                "--num_heads", "8",
+                "--steps", "210000",
+                "--cnn_enc_type", "unet",
+                "--use_accel",
+                "--subset_portion", "1.0",
+                "--log_n_imgs", "4",
+                "--slot_encode_RGB", 
+                "--ddim_steps", "1",
+                "--max_steps", "500",
+                "--scale_latent", "1.0",
+                "--diff_dim", "192",
+                "--num_workers", "4", 
+                "--share_slot_init" 
+            ]
+        }
+    ]
+}
