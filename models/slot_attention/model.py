@@ -26,8 +26,8 @@ import diffusers
 from diffusers import DDPMPipeline, DDPMScheduler, UNet2DModel, DiffusionPipeline, UNet2DConditionModel
 from diffusers import DDIMScheduler, StableDiffusionPipeline
 from diffusers.models import AutoencoderKL
-from diffusers.utils import randn_tensor
-from diffusers import UNet2DEncoder, UNet2DConditionModelWithPE
+from diffusers.utils.torch_utils import randn_tensor
+from models.diffusers.src.diffusers import UNet2DEncoder, UNet2DConditionModelWithPE
 from diffusers.optimization import get_scheduler
 from diffusers.training_utils import EMAModel
 from diffusers.utils import check_min_version, is_tensorboard_available, is_wandb_available
