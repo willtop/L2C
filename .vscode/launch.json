@@ -43,9 +43,11 @@
                 "--max_steps", "500",
                 "--scale_latent", "1.0",
                 "--diff_dim", "192",
-                "--num_workers", "4", 
+                "--num_workers", "2", 
                 "--share_slot_init" 
-            ]
+            ],
+            "env": {"PYTHONPATH": "${workspaceFolder}"},
+            "cwd": "${fileDirname}"
         }
     ]
 }

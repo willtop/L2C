@@ -533,8 +533,6 @@ def make_dataloaders(
     """
     if data_sizes is None:
         return []
-    dataloaders = []
-    start = starting_index
 
     dataloaders = []
     start = starting_index
@@ -577,7 +575,7 @@ def make_dataloaders(
         else:
             raise ValueError(f'Unknown dataset name {dataset_name}')
 
-        train_dataset = target_dataset(
+        train_dataset = target_dataset(128
             root=dataset_path,
             split='train',
             img_size=128,

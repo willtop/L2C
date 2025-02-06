@@ -14,10 +14,10 @@ from models.nn_utils import get_conv_output_shape, make_sequential_from_config
 from models.shared.nn import PositionalEmbedding
 from models.transformer import TransformerDecoder, PositionalEncoding
 from models.unet_model import UNet as simple_unet
-from models.networks.stylegan2_layers import *
+# from models.networks.stylegan2_layers import *
 import numpy as np
 from einops import repeat, rearrange
-from models.networks.swapae_layers import *
+# from models.networks.swapae_layers import *
 from models.networks.vq_layers import Encoder_Resnet, Decoder_Resnet
 import functools
 

@@ -60,6 +60,6 @@ accelerate launch --use_deepspeed --gradient_clipping 5.0 --num_processes 4 --ma
     --max_steps ${max_steps} \
     --scale_latent 1.0 \
     --diff_dim ${diff_dim} \
-    --num_workers 4 \
+    --num_workers 2 \
     --share_slot_init 
 

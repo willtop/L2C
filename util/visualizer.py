@@ -4,7 +4,8 @@ import os
 import sys
 import ntpath
 import time
-from . import util, html
+
+import util, html
 from subprocess import Popen, PIPE
 from func_timeout import func_timeout, FunctionTimedOut
 
